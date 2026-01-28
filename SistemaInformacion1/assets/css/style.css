@@ -1,0 +1,319 @@
+/* ================== RESET Y BASE ================== */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* ================== CANVAS FONDO ================== */
+canvas {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    display: block;
+}
+
+/* ================== TOP BAR ================== */
+.top-bar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: transparent;
+}
+
+.top-bar-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(30, 30, 47, 0.9);
+    padding: 10px 14px;
+    border-radius: 999px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    backdrop-filter: blur(6px);
+    font-size: 14px;
+}
+
+.user-name {
+    font-weight: 600;
+}
+
+.logout-btn {
+    background: #ff4d4d;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: background 0.3s;
+}
+
+.logout-btn:hover {
+    background: #e60000;
+}
+
+/* ================== CONTENEDORES ================== */
+.container-center {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: auto;
+    padding: 80px 20px 40px;
+}
+
+.card {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    background: rgba(20, 20, 30, 0.85);
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ================== TEXTOS ================== */
+h1, h2 {
+    text-align: center;
+}
+
+.card h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #00f6ff;
+    text-shadow: 0 0 8px #00f6ff;
+}
+
+.card .subtitle {
+    font-size: 1.2rem;
+    color: #b0b0c0;
+    margin-bottom: 30px;
+}
+
+/* ================== MENÚ ================== */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.menu a {
+    padding: 14px 20px;
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.menu a:hover {
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+/* ================== FORMULARIOS ================== */
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    background: #00ff9c;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00cc7a;
+}
+
+/* ================== TABLAS ================== */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border-bottom: 1px solid #555;
+}
+
+/* ================== BOTÓN VOLVER ================== */
+.menu-back {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu-btn-back {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 14px;
+    border: 2px solid #2effa1;
+    color: #2effa1;
+    text-decoration: none;
+    font-weight: bold;
+    background: rgba(46,255,161,0.05);
+    transition: all 0.3s ease;
+}
+
+.menu-btn-back:hover {
+    background: rgba(46,255,161,0.15);
+    transform: scale(1.05);
+}
+
+/* ================== LOGIN ================== */
+/* ================== LOGIN ================== */
+.login-wrapper {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.login-card {
+    max-width: 620px;        /* 🔥 tarjeta más grande */
+    width: 100%;
+    padding: 65px 60px;     /* 🔥 más espacio interno */
+}
+
+/* Títulos dentro del login */
+.login-card h1 {
+    font-size: 3.4rem;      /* 🔥 título más grande */
+}
+
+.login-card .subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 35px;
+}
+
+/* Formulario */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;              /* 🔥 más separación */
+}
+
+/* Inputs */
+.login-form input {
+    width: 100%;
+    max-width: 420px;       /* 🔥 más ancho */
+    padding: 16px;         /* 🔥 más alto */
+    font-size: 16px;       /* 🔥 texto más grande */
+    border-radius: 10px;
+    background: #223c45;
+    color: white;
+}
+
+/* Password */
+.password-box {
+    width: 100%;
+    max-width: 520px;       /* 🔥 igual que input */
+    position: relative;
+}
+
+.password-box input {
+    width: 100%;
+}
+
+/* Ojo */
+.password-box span {
+    position: absolute;
+    right: 50px;            /* más cerca del borde */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;        /* 👁 más grande */
+}
+
+/* Botón */
+.login-form button {
+    width: auto;
+    min-width: 240px;       /* 🔥 botón más grande */
+    padding: 16px 50px;    /* 🔥 más alto y ancho */
+    font-size: 16px;
+    border-radius: 10px;
+    background: linear-gradient(135deg,#2563eb,#3b82f6);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+}
+
+/* Link registro */
+.login-link {
+    margin-top: 18px;
+    font-size: 20px;
+}
+
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+
+    .card {
+        margin: 80px 10px;
+        padding: 30px;
+    }
+
+    .card h1 {
+        font-size: 2.3rem;
+    }
+
+    .top-bar {
+        top: 10px;
+        right: 10px;
+    }
+
+    .top-bar-user {
+        flex-direction: column;
+        gap: 6px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
