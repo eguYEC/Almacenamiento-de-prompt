@@ -36,34 +36,32 @@ El objetivo principal es proporcionar una plataforma centralizada para:
 
 ## Estructura del proyecto
 SISTEMAINFORMACION1
-│── assets/
-│ └── style.css
-│
-│── auth/
-│ ├── login.php
-│ ├── logout.php
-│ └── register.php
-│
-│── config/
-│ └── db.php
-│
-│── partials/
-│ ├── header.php
-│ └── footer.php
-│
-│── public/
-│ ├── index.php
-│ ├── categorias.php
-│ ├── create.php
-│ ├── edit.php
-│ ├── delete_prompt.php
-│ ├── save_prompt.php
-│ ├── update_prompt.php
-│ ├── search.php
-│ ├── prompts_categoria.php
-│ ├── favorites.php
-│ ├── favorito_add.php
-│ └── toggle_favorite.php
+📂 Proyecto-Root
+ ┣ 📂 assets
+ ┃ ┗ 🎨 style.css
+ ┣ 📂 auth
+ ┃ ┣ 🔑 login.php
+ ┃ ┣ 🚪 logout.php
+ ┃ ┗ 📝 register.php
+ ┣ 📂 config
+ ┃ ┗ 🗄️ db.php
+ ┣ 📂 partials
+ ┃ ┣ 🧩 header.php
+ ┃ ┗ 🧩 footer.php
+ ┗ 📂 public
+   ┣ 🏠 index.php
+   ┣ 📂 categorias.php
+   ┣ ➕ create.php
+   ┣ ✏️ edit.php
+   ┣ 🗑️ delete_prompt.php
+   ┣ 💾 save_prompt.php
+   ┣ 🔄 update_prompt.php
+   ┣ 🔍 search.php
+   ┣ 📑 prompts_categoria.php
+   ┣ 🌟 favorites.php
+   ┣ 📥 favorito_add.php
+   ┗ 🔄 toggle_favorite.php
+
 
 ---
 
@@ -95,7 +93,7 @@ La base de datos se gestiona con **phpMyAdmin** y contiene tablas para:
 4. Importar el archivo `.sql`
 5. Configurar la conexión en `config/db.php`
 6. Iniciar Apache y MySQL desde XAMPP
-7. Acceder desde el navegador: http://localhost/SISTEMAINFORMACION1/public
+7. Acceder desde el navegador: https://promptvault.infinityfreeapp.com/public
 
 ---
 
@@ -111,7 +109,7 @@ Proyecto desarrollado con fines **académicos**, aplicando:
 
 ## Autor
 **Yery Eguez**  
-Proyecto académico – 2026 🎓
+Proyecto académico – 2026
 
 ---
 
