@@ -36,7 +36,7 @@ El objetivo principal es proporcionar una plataforma centralizada para:
 
 ## Estructura del proyecto
 SISTEMAINFORMACION1
--project-root/
+- project-root/
   - assets/
     - style.css
   - auth/
