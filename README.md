@@ -36,31 +36,31 @@ El objetivo principal es proporcionar una plataforma centralizada para:
 
 ## Estructura del proyecto
 SISTEMAINFORMACION1
-project-root/
-- assets/
-  - style.css
-- auth/
-  - login.php
-  - logout.php
-  - register.php
-- config/
-  - db.php
-- partials/
-  - header.php
-  - footer.php
-- public/
-  - index.php
-  - categorias.php
-  - create.php
-  - edit.php
-  - delete_prompt.php
-  - save_prompt.php
-  - update_prompt.php
-  - search.php
-  - prompts_categoria.php
-  - favorites.php
-  - favorito_add.php
-  - toggle_favorite.php
+-project-root/
+  - assets/
+    - style.css
+  - auth/
+    - login.php
+    - logout.php
+    - register.php
+  - config/
+    - db.php
+  - partials/
+    - header.php
+    - footer.php
+  - public/
+    - index.php
+    - categorias.php
+    - create.php
+    - edit.php
+    - delete_prompt.php
+    - save_prompt.php
+    - update_prompt.php
+    - search.php
+    - prompts_categoria.php
+    - favorites.php
+    - favorito_add.php
+    - toggle_favorite.php
 
 
 ---
